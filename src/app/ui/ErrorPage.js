@@ -5,7 +5,7 @@ import BG from '../../assect/image/404.jpg'
 class ErrorPage extends React.Component{
     render(){
         return(
-            <div className="container">
+            <div className="">
                 <div className="error">
                     <img src={BG} className="error"/>
                 </div>

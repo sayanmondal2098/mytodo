@@ -1,13 +1,13 @@
 import React from 'react';
 import {FaInstagram, FaLinkedinIn, FaLinkedin, FaFacebook, FaMailBulk} from 'react-icons/fa';
 import {  FiMail } from 'react-icons/fi';
-
+import '../../assect/css/mycss.css';
 
 class Footer extends React.Component{
     render(){
         return(
             <div>
-            <div>
+            <div className="footer">
                 <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
                 </a>
