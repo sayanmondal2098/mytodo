@@ -1,12 +1,15 @@
 import React from 'react';
+import '../../assect/css/mycss.css';
+import BG from '../../assect/image/404.jpg'
 
 class ErrorPage extends React.Component{
     render(){
         return(
-            <p>
-                ErrorPage
-             page !!!!
-            </p>
+            <div className="container">
+                <div className="error">
+                    <img src={BG} className="error"/>
+                </div>
+            </div>
         )
     }
 }

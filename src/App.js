@@ -5,13 +5,13 @@ import Root from "./app/component/Root";
 import User from "./app/component/User";
 
 import ErrorPage from './app/ui/ErrorPage';
+import Footer from './app/ui/Footer';
+
 import Navigation from './app/route/Navigation';
 
 import './App.css';
 
 class App extends React.Component {
-
-
   render(){
     return (
 
@@ -23,7 +23,7 @@ class App extends React.Component {
       <Route path="/root" component={Root}/>
       <Route component={ErrorPage} />
       </Switch>
-
+      <Footer />
       </BrowserRouter>
   );
   }
