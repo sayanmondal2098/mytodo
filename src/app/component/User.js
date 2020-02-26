@@ -3,7 +3,7 @@ import React from 'react';
 class User extends React.Component{
     render(){
         return(
-            <div>
+            <div className="container">
                 <h1>
                     Hello from user
                 </h1>

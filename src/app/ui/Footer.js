@@ -8,6 +8,12 @@ class Footer extends React.Component{
         return(
             <div>
             <div className="footer">
+            <p>
+                    2, MY ADDRESS 
+                    SALTLAKE, KOLKATA
+                    PIN - 700067
+                </p>
+                <div>
                 <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
                 </a>
@@ -21,6 +27,7 @@ class Footer extends React.Component{
                 <FiMail />
                 </a>
             
+                </div>
             </div>
             </div>
         );
