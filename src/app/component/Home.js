@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assect/css/mycss.css'
+// import '../../assect/css/mycss.css'
 
 class Home extends React.Component{
 

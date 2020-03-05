@@ -18,6 +18,9 @@ class Navigation extends React.Component{
                 <li className="sidenav_ul">
                     <FaRoad />
                     <NavLink to="/root">Root</NavLink></li>
+                <li className="sidenav_ul">
+                    <FaRoad />
+                    <NavLink to="/weather">Weather</NavLink></li>
                 </ul>
 
             </dev>
