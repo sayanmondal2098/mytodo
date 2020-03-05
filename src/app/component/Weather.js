@@ -2,6 +2,7 @@ import React from 'react';
 // import { } from 'bootstrap';
 // import GetWeather from '../component/GetWeather';
 import '../../assect/css/mycss.css'
+import { Redirect } from 'react-router-dom';
 
 
 class Weather extends React.Component{
@@ -74,14 +75,33 @@ class Weather extends React.Component{
             wind_speed : data.wind.speed,
             clouds : data.clouds.all,
         },
-             console.log(data)))
+             console.log(data),
+             (error)=>{
+                this.setState({
+                 
+                  error : true
+                });
+              }))
     }
+
+    componentDidCatch(error, errorInfo) {
+        // You can also log the error to an error reporting service
+        this.setState({ error: true });
+
+      }
+
+
+
 
     render(){
         const {city, country    ,lon, lat,  icon , main , description, celsius, temp_max, temp_min, pressure,
                      humidity, visibility ,wind_speed,rain, clouds, error} = this.state;
         const imgsrc= `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        if (error) {
+            Redirect('https://google.com')
+          } 
         return(
+            
             
             <div className="App">
                 
@@ -89,11 +109,11 @@ class Weather extends React.Component{
             <form onSubmit={this.getWeather}>
             <input  type="text"
                 name="city" 
-                placeholder="City..." 
+                placeholder="Enter City Name..." 
                 value={this.state.city}
                 onChange={this.handleCityChange}/>
                 
-		    <input type="text" name="country" placeholder="Country..."
+		    <input type="text" name="country" placeholder="Country Name (Optional)..."
             value={this.state.country}
             onChange={this.handleCountryChange}
             />
