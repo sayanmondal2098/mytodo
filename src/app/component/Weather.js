@@ -48,9 +48,7 @@ class Weather extends React.Component{
       }
 
       handleCountryChange(event) {
-        this.setState({country : event.target.value
-
-            });
+        this.setState({country : event.target.value});
       }
 
     getWeather(e){
