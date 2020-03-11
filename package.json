@@ -14,13 +14,9 @@
     "react-icons": "3.9.0",
     "react-router-dom": "5.1.2",
     "react-scripts": "3.4.0",
-<<<<<<< HEAD
     "react-table": "^7.0.0-rc.16",
     "react-table-6": "^6.11.0",
     "resolve-url-loader": "^3.1.1"
-=======
-    "resolve-url-loader": "3.1.1"
->>>>>>> 64cc039b4a0ac4e473940c2f78749fa3d3c20646
   },
   "scripts": {
     "start": "react-scripts start",
