@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {  } from 'react-icons';
+
 
 import '../../assect/css/mycss.css';
 import { FaHome, FaRoad, FaUser } from 'react-icons/fa';
